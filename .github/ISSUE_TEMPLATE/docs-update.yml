@@ -1,0 +1,42 @@
+name: 📚 Documentation Update
+description: Request updates, fixes, or additions to the project docs.
+title: "[Docs] "
+labels: [documentation]
+body:
+  - type: textarea
+    id: location
+    attributes:
+      label: 📍 Where is the issue?
+      description: What file, section, or page needs updating?
+      placeholder: e.g., README.md → Installation section
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 🛠️ What needs updating?
+      description: Explain what's missing, outdated, confusing, or wrong.
+      placeholder: The install instructions are missing a step for setting up env vars...
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 💡 Got a suggested fix?
+      description: Optional: If you already know how to fix it, drop it here.
+      placeholder: Replace step 3 with "run source .env before install"...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: ⏱️ How urgent is this?
+      options:
+        - Just a nice-to-have
+        - Should be fixed soon
+        - Blocks users from understanding/using the tool
+    validations:
+      required: false
