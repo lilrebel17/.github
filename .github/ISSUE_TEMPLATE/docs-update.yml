@@ -25,7 +25,7 @@ body:
     id: suggestion
     attributes:
       label: 💡 Got a suggested fix?
-      description: Optional: If you already know how to fix it, drop it here.
+      description: Optional - If you already know how to fix it, drop it here.
       placeholder: Replace step 3 with "run source .env before install"...
     validations:
       required: false
